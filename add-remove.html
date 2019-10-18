@@ -1,0 +1,41 @@
+<html>
+<head>
+  
+</head>
+
+
+<body>
+
+  <input type="text" id="usershit">
+  <button onclick="addMe()">Submit</button>
+  <ol> </ol>
+  <input type="number" id="usernumber">
+  <button onclick="removeMe()">Remove</button>
+
+<script>
+  function addMe() {
+    var newlist = document.createElement("li");
+    var newText=document.createTextNode(usershit.value);
+    newlist.appendChild(newText);
+    var position = document.getElementsByTagName("ol")[0];
+    position.appendChild(newlist); }
+
+function removeMe() {
+// I will get the value of the usernumber field
+var num = document.getElementById("usernumber").value;
+// I will convert it to a number
+var y = parseInt(num);
+// I will get the child based on the number - 1
+var getchild = document.getElementsByTagName("li")[y-1];
+//I will get the parent of the child
+var getparent = getchild.parentNode;
+//I will remove the child from the parent
+getparent.removeChild(getchild);}
+</script>
+  
+  
+</body>
+  
+  
+  
+</html>

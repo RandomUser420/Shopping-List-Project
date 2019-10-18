@@ -1,0 +1,20 @@
+#color{
+  color:gold;
+  font-size:30px;
+  
+}
+
+body {
+  background-image:url("space.jpg");
+  background-size:100%;
+}
+
+.color {
+  color:gold;
+}
+
+
+.colors {
+  font-size:30px;
+  color:gold;
+}
